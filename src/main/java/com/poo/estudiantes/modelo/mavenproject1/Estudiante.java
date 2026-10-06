@@ -34,4 +34,10 @@ public abstract class Estudiante {
              System.out.println("Nombre" + nombre);
         }
     }
+    
+    
+    
+    public static String universidad(){
+        return "Universidad de Cartagena";
+    }
 }
