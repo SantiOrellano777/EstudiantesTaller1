@@ -11,10 +11,10 @@ package com.poo.estudiantes.modelo.mavenproject1;
 public class Pregrado extends Estudiante {
     private int creditos;
 
-    public Pregrado(int creditos, String nombre, String codigo) {
-        super(nombre, codigo);
-        this.creditos = creditos;
-    }
+    public Pregrado(String nombre, String codigo, int creditos) {
+    super(nombre, codigo);
+    this.creditos = creditos;
+}
    
 
     @Override

@@ -11,10 +11,10 @@ package com.poo.estudiantes.modelo.mavenproject1;
 public class Posgrado extends Estudiante{
     private int materias;
 
-    public Posgrado(int materias, String nombre, String codigo) {
-        super(nombre, codigo);
-        this.materias = materias;
-    }
+    public Posgrado(String nombre, String codigo, int materias) {
+    super(nombre, codigo);
+    this.materias = materias;
+}
 
    
 
