@@ -8,6 +8,30 @@ package com.poo.estudiantes.modelo.mavenproject1;
  *
  * @author SANTIAGO
  */
-public class Estudiante {
+public abstract class Estudiante {
+    private String nombre;
+    private String codigo;
+
+    public Estudiante(String nombre, String codigo) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+    }
     
+    
+    public abstract double calcularMatricula();
+    
+    
+    public void mostrarNombre()
+    {
+        System.out.println("Nombre" + nombre);
+    }
+    public void mostrarNombre(boolean enMayusculas){
+        if(enMayusculas)
+        {
+            System.out.println("Nombre" + nombre.toUpperCase()); 
+        }
+        else{
+             System.out.println("Nombre" + nombre);
+        }
+    }
 }
